@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTHFULPLATE</title>
+    <link rel="stylesheet" href="styleh.css">
+    
+
+</head>
+<body>
+    
+
+    <header class="header">
+        <a href="a" class="logo"> HEALTHFULPLATE </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            
+            <div class="dropdown">
+              <a href="#">Fitness</a>
+              <div class="dropdown-content">
+                <a href="hh.html/wg.html">Weight Gain</a>
+                <a href="#">Weight Loss</a>
+              </div>
+            </div>
+            <a href="#pricing">Pricing</a>
+            <a href="#review">Review</a>
+        </nav>
+        <div class="fas fa-bars" id="menu"></div>
+    </header>
+     <section class="home" id="home">
+
+        <div class="content">
+            <h3>Start your journey to health today!</h3>
+            <a href="#" class="btn">read more </a>
+        </div>
+     </section>
+      
+
+     <section class="about" id="about">
+        <h1 class="heading">about us</h1>
+        <div class="row">
+            <div class="content">
+                <h3>my mission is to give you a guideline for your health</h3>
+                <h2>At our diet planner and BMI calculator website, we are committed to helping individuals achieve their health and wellness goals 
+                    through personalized meal suggestions tailored to their Body Mass Index (BMI). We understand that maintaining a healthy lifestyle 
+                    involves more than just numbers on a scale, which is why our platform integrates the science of BMI calculation with practical and
+                     nutritious meal ideas. By analyzing your BMI, we curate meal recommendations that align with your specific needs, whether it's emphasizing
+                      high-protein foods for those aiming to gain weight, suggesting balanced meals for maintaining a healthy BMI, or focusing on portion control
+                       and nutrient-dense options for weight management. Our mission is to empower you with the knowledge and tools to make informed dietary
+                        choices that support your overall well-being."</h2>
+                  <a href="#" class="btnn">read more</a>
+                </div>
+                <div class="image">
+                   <img src="pine.jpg" alt=""> 
+                </div>
+        </div>
+     </section>
+     <section class="bmi-form" >
+        <label for="height">Height (in cm):</label>
+        <input type="number" id="height" placeholder="Enter height in cm" required>
+  
+        <label for="weight">Weight (in kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight in kg" required>
+  
+        <button onclick="calculateBMI()">Calculate BMI</button>
+  
+        <div id="result"></div>
+      </section>
+      <script src="scripth.js"></script>
+      
+      <section class="meal-suggestions">
+        <h2>Meal Suggestions</h2>
+        <div id="mealSuggestions">
+          <!-- Suggestions will appear here -->
+        </div>
+        <script src="scripth.js"></script>
+      </section>
+    
+  
+    <footer>
+      <p>&copy; 2023 Meal Suggestions. All rights reserved.</p>
+    </footer>
+  
+    
+
+</body>
+</html>

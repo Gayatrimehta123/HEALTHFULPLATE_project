@@ -1,0 +1,73 @@
+/* Style your webpage as needed */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    color: white;
+    
+    padding: 20px;
+    text-align: center;
+    background: url(abc.jpg);
+    
+  }
+  
+  main {
+    padding: 20px;
+    background:rgb(235, 211, 237);
+    background-size:cover;
+    background: url(abc.jpg);
+  }
+  
+  .dietician {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .whatsapp-link {
+    display: block;
+    margin-top: 10px;
+  }
+  /* Existing styles */
+
+.subscription {
+    margin-top: 30px;
+  }
+  h2 {
+    text-align: center;
+    
+  }
+  #subscription h2 a  {
+    text-decoration: none;
+    color: rgb(230, 136, 14);
+  }
+  #subscription h2 a:hover{
+    color: rgb(255, 47, 0);
+  }
+  
+  .dieticians-section {
+    display: flex;
+    align-items: center;
+    /* Other styling for the section */
+}
+
+.image-container {
+    
+    position: relative;
+    min-width: 100%;
+}
+
+.right-img {
+    position: absolute;
+    top: -165px;
+    right: 0;
+    width: 200px;
+    height: auto;
+}
+
+
+  

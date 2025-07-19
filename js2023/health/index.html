@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietician Consultation Service</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header class="header">
+
+    </header>
+    <div class="container">
+        <header>
+            <h1 style="color: rgb(7, 7, 136);">Welcome to Our Dietician Consultation Service</h1>
+        </header>
+        <section class="about">
+            <h2 style="color: rgba(38, 31, 97, 0.911);">About Our Service</h2>
+            <p >At FitGenius, we provide direct and convenient access to professional dieticians who can assist you with your health and nutrition goals.</p>
+            <p>Whether you're looking to manage weight, improve eating habits, or address specific health concerns, our experienced dieticians are here to help.</p>
+        </section>
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <form action="sendwhatsapp.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="health-problem">Health Problem/Goals:</label>
+                <textarea id="health-problem" name="health-problem" rows="4" required></textarea>
+                
+                <fieldset>
+                    <legend>Choose Your Dietician:</legend>
+                    <input type="radio" id="dietician1" name="dietician" value="Dietician 1" required>
+                    <label for="dietician1">Dietician 1</label><br>
+                    
+                    <input type="radio" id="dietician2" name="dietician" value="Dietician 2" required>
+                    <label for="dietician2">Dietician 2</label><br>
+                </fieldset>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section class="why-choose-us">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>Expert Guidance:</strong> Our dieticians are experienced professionals dedicated to helping you achieve your health goals.</li>
+                <li><strong>Convenient Communication:</strong> Connect directly with your dietician through WhatsApp for easy access and quick responses.</li>
+                <li><strong>Personalized Approach:</strong> Receive tailored advice and recommendations based on your specific needs.</li>
+            </ul>
+        </section>
+        <section class="get-started">
+            <h2>Get Started Today</h2>
+            <p>Take the first step towards better health and nutrition. Fill out the form above and connect with a dietician who understands your unique requirements.</p>
+            <p>For any inquiries or assistance, feel free to contact us at 7505308998 .</p>
+            <a href="contact.html" class="contact-button">Contact Us</a>
+        </section>
+        <footer>
+            <p>&copy; 2024 Fitgenius. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+   document.getElementById('consultationForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Get form values
+    const name = document.getElementById('name').value;
+    const healthProblem = document.getElementById('health-problem').value;
+    const dietician = document.querySelector('input[name="dietician"]:checked');
+
+    console.log("Name:", name);
+    console.log("Health Problem:", healthProblem);
+    console.log("Dietician:", dietician);
+
+    if (!dietician) {
+        alert("Please select a dietician.");
+        return;
+    }
+
+    const dieticianValue = dietician.value;
+
+    console.log("Selected Dietician:", dieticianValue);
+
+    // WhatsApp numbers of dieticians (replace with actual WhatsApp numbers)
+    const whatsappNumbers = {
+        "Dietician 1": "7505308998", // Replace with actual WhatsApp number of Dietician 1
+        "Dietician 2": "7505308998"  // Replace with actual WhatsApp number of Dietician 2
+    };
+
+    // Validate selected dietician
+    if (whatsappNumbers[dieticianValue]) {
+        // Construct WhatsApp message
+        const whatsappMessage = `Hi, I'm interested in a consultation. My name is ${name} and my health problem/goals are: ${healthProblem}`;
+        // Construct WhatsApp URL
+        const whatsappURL = `https://wa.me/${whatsappNumbers[dieticianValue]}?text=${encodeURIComponent(whatsappMessage)}`;
+
+        console.log("WhatsApp URL:", whatsappURL);
+
+        // Redirect to WhatsApp
+        window.location.href = whatsappURL;
+    } else {
+        alert("Invalid dietician selection.");
+    }
+});
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

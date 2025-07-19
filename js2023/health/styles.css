@@ -1,0 +1,78 @@
+/* Styles for Balanced Meals webpage */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040c0e;
+    color: #020202;
+  }
+
+  .header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 9%;
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+  }
+  
+  header, footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .meal-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .meal-card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #eeefc2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .meal-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .meal-card h2 {
+    margin: 10px 0;
+  }
+  
+  .meal-card p {
+    margin-bottom: 15px;
+  }
+  
+  .meal-card a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .meal-card a:hover {
+    background-color: #2980b9;
+  }
+  

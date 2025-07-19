@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan for Portion Control</title>
+    <link rel="stylesheet" href="portion.css">
+</head>
+<body>
+    <header class="header">
+        
+    </header>
+    <div class="container">
+        <header>
+            <h1>Diet Plan for Portion Control</h1>
+        </header>
+        <main>
+            <section class="plan">
+                <h2>Weekly Diet Plan</h2>
+                <ul id="diet-plan">
+                    <li>Monday: Breakfast - Oatmeal, Lunch - Grilled Chicken Salad, Dinner - Steamed Vegetables</li>
+                    <li>Tuesday: Breakfast - Yogurt with Fruit, Lunch - Turkey Sandwich, Dinner - Baked Fish</li>
+                    <li>Wednesday: Breakfast - Smoothie, Lunch - Quinoa Salad, Dinner - Stir-fried Tofu</li>
+                </ul>
+                <div id="extra-info"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Healthy Life</p>
+        </footer>
+    </div>
+    <script>
+        const array = ['portion control'];
+
+        if (array.length === 0) {
+            console.log("Array is empty");
+        } else {
+            const item = array[0];
+            const extraInfoDiv = document.getElementById('extra-info');
+
+            const link = document.createElement('a');
+            link.href = 'portion-control.html';
+            link.textContent = item;
+
+            extraInfoDiv.appendChild(link);
+        }
+    </script>
+</body>
+</html>

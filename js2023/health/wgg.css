@@ -1,0 +1,47 @@
+/* Basic styles for the layout */
+/* Styles for the webpage */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(166, 219, 205);
+  }
+  
+  header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .exercise {
+    margin-bottom: 30px;
+  }
+  
+  .exercise-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video {
+    margin-bottom: 20px;
+  }
+  
+  
+    .description {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+        max-width: 500px; /* Set a maximum width for the description block */
+        margin: 0 ; /* Center the block horizontally */
+      }
+      
+
+  
+  
+  /* Add more styling as needed */
+  
